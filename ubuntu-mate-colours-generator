@@ -472,10 +472,13 @@ def patch_icons():
 
     # --> General colours and shades
     _replace_string("*.svg", "#87A752", prop.new_hex_value)
+    _replace_string("*.svg", "#f6daae", _get_hex_variant(prop.new_hex_value, 29))
+    _replace_string("*.svg", "#d9edb9", _get_hex_variant(prop.new_hex_value, 25))
     _replace_string("*.svg", "#ADC980", _get_hex_variant(prop.new_hex_value, 15))
     _replace_string("*.svg", "#688933", _get_hex_variant(prop.new_hex_value, -10))
     _replace_string("*.svg", "#4e7752", _get_hex_variant(prop.new_hex_value, -20))
     _replace_string("*.svg", "#4A6A17", _get_hex_variant(prop.new_hex_value, -18))
+    _replace_string("*.svg", "#2e4705", _get_hex_variant(prop.new_hex_value, -25))
 
     # --> preferences-desktop-theme
     _replace_string("*.svg", "#4e6827", _get_hex_variant(prop.new_hex_value, -18))
